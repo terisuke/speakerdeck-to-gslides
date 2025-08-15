@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.zip
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Environment and config files
+.env
+.env.local
+config.js
+config.local.js
+
+# Private keys and credentials
+*.pem
+*.key
+client_id.json
+credentials.json
+
+# Test files
+*.test.js
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Archive and backup files
+archive/
+backup/
+*.backup
+*.bak
+
+# Chrome extension specific
+*.crx
+*.pem
+
+# User-specific configuration
+manifest.local.json
+service-worker.local.js
+
+# Documentation drafts
+drafts/
+*.draft.md
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+config.js

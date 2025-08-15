@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "SpeakerDeck to Google Slides",
+  "version": "0.0.1",
+  "description": "Convert SpeakerDeck presentations to Google Slides",
+  "permissions": [
+    "scripting",
+    "identity",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://speakerdeck.com/*",
+    "https://files.speakerdeck.com/*",
+    "https://slides.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://speakerdeck.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "SpeakerDeck to Google Slides"
+  },
+  "oauth2": {
+    "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/presentations",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

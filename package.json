@@ -1,0 +1,31 @@
+{
+  "name": "speakerdeck-to-gslides",
+  "version": "1.0.0",
+  "description": "Chrome extension to convert SpeakerDeck presentations to Google Slides",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "./setup_client_id.sh",
+    "zip": "zip -r extension.zip manifest.json content.js service-worker.js icons/ -x '*.DS_Store'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "speakerdeck",
+    "google-slides",
+    "presentation",
+    "converter"
+  ],
+  "author": "SpeakerDeck to Google Slides Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/speakerdeck-to-gslides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/speakerdeck-to-gslides/issues"
+  },
+  "homepage": "https://github.com/yourusername/speakerdeck-to-gslides#readme",
+  "engines": {
+    "chrome": ">=88"
+  }
+}
